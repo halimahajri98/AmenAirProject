@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:key="@string/pref_key_account_settings_root">
+
+    <Preference
+        android:enabled="false"
+        android:key="@string/pref_key_username"
+
+        android:title="@string/username" />
+
+</PreferenceScreen>

@@ -1,0 +1,72 @@
+<resources>
+    <string name="app_name">pARPproject</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="change_photo">Change photo</string>
+
+
+    <string name="reader_avatar_desc">profile picture</string>
+    <!--Account Settings-->
+    <string name="account_settings">Account Settings</string>
+    <string name="pending_email_change_snackbar">Click the verification link in the email sent to %1$s to confirm your new address</string>
+    <string name="primary_site">Primary site</string>
+    <string name="web_address">Web address</string>
+    <string name="web_address_dialog_hint">Shown publicly when you comment.</string>
+    <string name="change_password">Change password</string>
+    <string name="change_password_confirmation">Password changed successfully</string>
+    <string name="change_password_dialog_hint">Your password should be at least six characters long. To make it stronger, use upper and lower case letters, numbers, and symbols like ! \" ? $ % ^ &amp; ).</string>
+    <string name="change_password_dialog_message">Changing password…</string>
+    <string name="exporting_content_progress">Exporting content…</string>
+    <string name="export_email_sent">Export email sent!</string>
+    <string name="export_your_content">Export your content</string>
+    <string name="export_your_content_message">Your posts, pages, and settings will be emailed to you at %s.</string>
+
+    <!--My profile-->
+    <string name="my_profile">My Profile</string>
+    <string name="first_name">First name</string>
+    <string name="last_name">Last name</string>
+    <string name="public_display_name">Public display name</string>
+    <string name="public_display_name_hint">Display name will default to your username if it is not set</string>
+    <string name="about_me">About me</string>
+    <string name="about_me_hint">A few words about you…</string>
+    <string name="start_over">Start Over</string>
+    <string name="site_settings_start_over_hint">Start your site over</string>
+    <string name="start_over_email_subject">Start over with site %s</string>
+    <string name="start_over_email_body">I want to start over with the site %s</string>
+    <string name="start_over_email_intent_error">Unable to send an email</string>
+    <string name="let_us_help">Let Us Help</string>
+    <string name="start_over_text">If you want a site but don\'t want any of the posts and pages you have now, our support team can delete your posts, pages, media and comments for you.\n\nThis will keep your site and URL active, but give you a fresh start on your content creation. Just contact us to have your current content cleared out.</string>
+    <string name="contact_support">Contact support</string>
+    <string name="confirm_delete_site">Confirm Delete Site</string>
+    <string name="confirm_delete_site_prompt">Please type in %1$s in the field below to confirm. Your site will then be gone forever.</string>
+    <string name="site_settings_export_content_title">Export content</string>
+    <string name="error_deleting_site">Error deleting site</string>
+    <string name="error_deleting_site_summary">There was an error in deleting your site. Please contact support for more assistance.</string>
+    <string name="primary_domain">Primary Domain</string>
+    <string name="export_site_hint">Export your site to an XML file</string>
+    <string name="delete_site_warning_title">Delete site?</string>
+    <string name="delete_site_warning">All your posts, images, and data will be deleted. And this site’s address (%s) will be lost.</string>
+    <string name="delete_site_warning_subtitle">Be careful! Once a site is deleted, it cannot be recovered. Please be sure before you proceed.</string>
+    <string name="delete_site_hint">Delete site</string>
+    <string name="delete_site_progress">Deleting site…</string>
+    <string name="purchases_request_error">Something went wrong. Could not request purchases.</string>
+    <string name="premium_upgrades_title">Premium Upgrades</string>
+    <string name="premium_upgrades_message">You have active premium upgrades on your site. Please cancel your upgrades prior to deleting your site.</string>
+    <string name="show_purchases">Show purchases</string>
+    <string name="checking_purchases">Checking purchases</string>
+
+    <!--Me-->
+    <string name="me_profile_photo">Profile Photo</string>
+    <string name="me_btn_app_settings">App Settings</string>
+    <string name="me_btn_support">Help &amp; Support</string>
+    <string name="me_btn_login_logout">Login/Logout</string>
+    <string name="me_connect_to_wordpress_com">Log in to WordPress.com</string>
+    <string name="me_disconnect_from_wordpress_com">Log out of WordPress.com</string>
+    <string name="notification_settings_moved_notices">Notification Settings can now be found in the Notifications tab.</string>
+
+
+</resources>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "327421146400",
+    "project_id": "amenairproject",
+    "storage_bucket": "amenairproject.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:327421146400:android:e744429a52f33cf676d345",
+        "android_client_info": {
+          "package_name": "com.example.parpproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "327421146400-2hpom87a242s8qbpmt66r3kuriegoc5v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDxzDhNMxQ2KXj7moJWK3qkMpO0mNrT1ek"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "327421146400-2hpom87a242s8qbpmt66r3kuriegoc5v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

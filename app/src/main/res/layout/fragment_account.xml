@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="#f2f2f2">
+
+
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_avatar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_large"
+                android:layout_marginEnd="@dimen/content_margin"
+                android:layout_marginStart="@dimen/content_margin"
+                android:layout_marginTop="@dimen/margin_large">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/margin_extra_medium_large">
+
+                    <FrameLayout
+                        android:id="@+id/frame_avatar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true">
+
+                        <FrameLayout
+                            android:id="@+id/avatar_container"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="?attr/selectableItemBackgroundBorderless"
+                            android:contentDescription="@string/me_profile_photo"
+                            android:padding="@dimen/margin_small">
+
+                            <ImageView
+                                android:id="@+id/me_avatar"
+                                android:layout_width="@dimen/avatar_sz_inner_circle"
+                                android:layout_height="@dimen/avatar_sz_inner_circle"
+                                android:contentDescription="@string/reader_avatar_desc"/>
+                        </FrameLayout>
+
+                        <ProgressBar
+                            android:id="@+id/avatar_progress"
+                            style="@android:style/Widget.Holo.ProgressBar"
+                            android:layout_width="@dimen/avatar_sz_inner_circle"
+                            android:layout_height="@dimen/avatar_sz_inner_circle"
+                            android:layout_gravity="center"
+                            android:background="@drawable/bg_oval_black"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:indeterminate="true"
+                            android:padding="@dimen/margin_large"
+                            android:visibility="gone"
+                            tools:visibility="visible"/>
+                    </FrameLayout>
+
+                    <TextView
+                        android:id="@+id/change_photo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/frame_avatar"
+                        android:layout_centerHorizontal="true"
+                        android:background="?attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:padding="8dp"
+                        android:text="@string/change_photo"
+                        android:textAllCaps="true"
+                        android:textColor="#006088"
+                        android:textSize="10sp"
+                        tools:ignore="SmallSp"
+                        tools:text="Change photo"/>
+
+                    <TextView
+                        android:id="@+id/me_display_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/change_photo"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="8dp"
+                        android:ellipsize="end"
+                        android:fontFamily="sans-serif-light"
+                        android:maxLines="1"
+                        android:textSize="@dimen/text_sz_large"
+                        android:textStyle="bold"
+                        tools:text="Full Name"/>
+
+                    <TextView
+                        android:id="@+id/me_username"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/me_display_name"
+                        android:layout_centerHorizontal="true"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:textSize="@dimen/text_sz_medium"
+                        tools:text="username" />
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+
+     <LinearLayout
+         android:paddingTop="30dp"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:paddingLeft="30dp"
+         android:orientation="vertical">
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email"
+                android:textColor="#1E1F28"
+                android:textStyle="bold"
+                android:fontFamily="@font/poppins_semibold"
+                android:layout_marginBottom="15dp"/>
+
+            <TextView
+                android:id="@+id/user_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#1E1F28"
+                android:fontFamily="@font/poppins_regular" />
+
+            <View
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#e0e0e0"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Change Password"
+                android:layout_marginBottom="10dp"/>
+
+            <EditText
+                android:id="@+id/edit_password"
+                android:inputType="textPassword"
+                android:drawablePadding="10dp"
+                android:drawableLeft="@drawable/ic_baseline_edit_24"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:textColor="#1E1F28"
+                android:fontFamily="@font/poppins_regular"
+                android:layout_marginBottom="20dp"/>
+
+            <Button
+                android:id="@+id/update_profile"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="CHANGE"
+                android:textColor="#78B6E6"
+                android:layout_marginBottom="20dp"/>
+
+
+
+
+     </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
