@@ -2,6 +2,7 @@ package com.example.parpproject.frag;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 
 import androidx.annotation.Nullable;
@@ -23,7 +24,7 @@ import com.example.parpproject.signup;
 public class staticsFragment extends Fragment {
 
   RelativeLayout filtre1 , courois1 ;
-  Intent i ;
+  Intent intent ;
     Activity context ;
 
 
@@ -41,13 +42,21 @@ public class staticsFragment extends Fragment {
         super.onStart();
          filtre1= (RelativeLayout) context.findViewById(R.id.filtre1);
 
-        i = new Intent(context, filtreProducts.class);
+        //i = new Intent(context,filtreProducts.class);
         filtre1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(i);
+
+               gotoUrl("https://vizmerald.com/AmenAir/index.php");
             }
         });
+    }
+
+    private void gotoUrl(String s) {
+
+        Uri uri =Uri.parse(s);
+
+        startActivity(new Intent(intent.ACTION_VIEW, uri));
     }
 
 }

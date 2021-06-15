@@ -9,6 +9,7 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.TextView;
 
+import com.example.parpproject.frag.HomeFragment;
 import com.google.firebase.auth.FirebaseAuth;
 
 public class welcome extends AppCompatActivity {
@@ -32,8 +33,6 @@ public class welcome extends AppCompatActivity {
         }else{
             startActivity(new Intent(this, MainActivity.class));
         }
-
-    
 
 
     }

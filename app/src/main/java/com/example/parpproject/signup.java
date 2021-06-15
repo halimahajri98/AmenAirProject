@@ -1,6 +1,6 @@
 package com.example.parpproject;
 
-import androidx.annotation.NonNull;
+
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -31,7 +31,7 @@ public class signup extends AppCompatActivity {
     private FirebaseAuth mFirebaseAuth ;
 
     FirebaseDatabase database =FirebaseDatabase.getInstance() ;
-    DatabaseReference myRef = database.getReference().child("Users") ;
+    DatabaseReference myRef = database.getReference().child("users") ;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,15 +45,6 @@ public class signup extends AppCompatActivity {
         user_password = findViewById(R.id.passwordpass);
 
        
-
-
-
-
-
-
-
-
-
 
         mFirebaseAuth = FirebaseAuth.getInstance();
 
@@ -110,6 +101,7 @@ public class signup extends AppCompatActivity {
                         });
 
             }
+
             {
                 HashMap<String, String> userMap = new HashMap<>();
                 userMap.put("email", email);

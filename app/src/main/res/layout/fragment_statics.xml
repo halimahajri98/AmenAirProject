@@ -10,26 +10,7 @@
         android:layout_margin="10dp"
         android:orientation="vertical">
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="?actionBarSize">
-            <ImageView
-                android:id="@+id/back_pressed"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerVertical="true"
-                android:padding="15dp"
-                android:onClick="retour"
-                android:src="@drawable/general_search_icon" />
 
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
-                android:layout_centerVertical="true"
-                android:padding="15dp"
-                android:src="@drawable/general_back_icon" />
-        </RelativeLayout>
 
         <TextView
             android:layout_width="wrap_content"

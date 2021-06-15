@@ -31,13 +31,14 @@
                     android:layout_height="wrap_content"
                     android:padding="@dimen/margin_extra_medium_large">
 
-                    <FrameLayout
+                    <RelativeLayout
+
                         android:id="@+id/frame_avatar"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_centerHorizontal="true">
 
-                        <FrameLayout
+                        <RelativeLayout
                             android:id="@+id/avatar_container"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -46,11 +47,12 @@
                             android:padding="@dimen/margin_small">
 
                             <ImageView
+
                                 android:id="@+id/me_avatar"
                                 android:layout_width="@dimen/avatar_sz_inner_circle"
                                 android:layout_height="@dimen/avatar_sz_inner_circle"
                                 android:contentDescription="@string/reader_avatar_desc"/>
-                        </FrameLayout>
+                        </RelativeLayout>
 
                         <ProgressBar
                             android:id="@+id/avatar_progress"
@@ -65,7 +67,7 @@
                             android:padding="@dimen/margin_large"
                             android:visibility="gone"
                             tools:visibility="visible"/>
-                    </FrameLayout>
+                    </RelativeLayout>
 
                     <TextView
                         android:id="@+id/change_photo"

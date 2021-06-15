@@ -224,7 +224,7 @@ public class connectionBluetooth extends AppCompatActivity {
          * @author ryder
          *
          */
-        private class MyAdapter extends ArrayAdapter<BluetoothDevice> {
+        class MyAdapter extends ArrayAdapter<BluetoothDevice> {
             private int selectedIndex;
             private Context context;
             private int selectedColor = Color.parseColor("#abcdef");

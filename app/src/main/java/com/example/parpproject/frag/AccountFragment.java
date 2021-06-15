@@ -21,6 +21,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -44,6 +45,7 @@ public class AccountFragment extends Fragment {
     Activity context ;
     private static final int PICK_IMAGE =1 ;
    ImageView changeimage;
+
     Uri imageUrl;
     private FirebaseStorage storage;
     private StorageReference storagereference ;
@@ -82,6 +84,8 @@ public class AccountFragment extends Fragment {
 
 
 
+
+
        changeimage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -105,7 +109,7 @@ public class AccountFragment extends Fragment {
             imageUrl = data.getData();
             try {
                 Bitmap bitmap = MediaStore.Images.Media.getBitmap(getActivity().getContentResolver(),imageUrl);
-                changeimage.setImageBitmap(bitmap);
+              changeimage.setImageBitmap(bitmap);
             } catch (IOException e){
                 e.printStackTrace();
             }

@@ -4,10 +4,9 @@
 
     <uses-permission android:name="android.permission.BLUETOOTH" />
     <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
-
-    <uses-permission android:name="android.permission.INTERNET"/>
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
 
     <application
         android:allowBackup="true"
@@ -16,11 +15,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.PARPproject">
+        <activity android:name=".Controlling_vitesse"></activity>
+        <activity android:name=".Bluetooth" />
 
-        <meta-data android:name="com.google.android.geo.API_KEY"
-        android:value="AIzaSyApY7GsiB65UtIKatn-fupDgRa4gNcb1Oc"/> //keyAPIgoogleMap
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyApY7GsiB65UtIKatn-fupDgRa4gNcb1Oc" />
 
-        <activity android:name=".consBatterie"></activity>
+        <activity android:name=".consBatterie" />
         <activity android:name=".temperature" />
         <activity android:name=".filtreProducts" />
         <activity android:name=".welcome" />

@@ -59,6 +59,7 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/carventilo"
             android:foreground="?android:attr/selectableItemBackground"
             android:clickable="true"
             android:layout_width="140dp"
@@ -70,6 +71,7 @@
                 android:orientation="vertical"
                 android:gravity="center">
                 <ImageView
+                    android:src="@drawable/ventilateur"
                     android:layout_marginTop="7dp"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
@@ -80,7 +82,7 @@
                     android:layout_height="wrap_content"
                     android:textStyle="bold"
                     android:layout_marginTop="10dp"
-                    android:text="Ideas"/>
+                    android:text="Ventilateur"/>
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
@@ -90,7 +92,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:text="Check your ....."
+                    android:text="Check your ventilo vitesse"
                     android:padding="5dp"
                     android:textColor="@android:color/darker_gray"/>
 
