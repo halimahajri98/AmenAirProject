@@ -5,6 +5,7 @@ import android.app.ProgressDialog;
 import android.content.ContentResolver;
 import android.content.Intent;
 import android.graphics.Bitmap;
+import android.location.Location;
 import android.net.Uri;
 import android.os.Bundle;
 
@@ -17,6 +18,7 @@ import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
 
 import android.provider.MediaStore;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -36,6 +38,7 @@ import com.google.firebase.storage.UploadTask;
 
 
 import java.io.IOException;
+import java.util.Objects;
 import java.util.UUID;
 
 
@@ -75,14 +78,9 @@ public class AccountFragment extends Fragment {
 
 
 
-
-
     public void onStart (){
         super.onStart();
         changeimage= context.findViewById(R.id.me_avatar);
-
-
-
 
 
 
@@ -105,16 +103,20 @@ public class AccountFragment extends Fragment {
     public void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
 
         super.onActivityResult(requestCode, resultCode, data) ;
-            if (requestCode == PICK_IMAGE && requestCode == RESULT_OK) {
-            imageUrl = data.getData();
-            try {
-                Bitmap bitmap = MediaStore.Images.Media.getBitmap(getActivity().getContentResolver(),imageUrl);
-              changeimage.setImageBitmap(bitmap);
-            } catch (IOException e){
-                e.printStackTrace();
+        if (requestCode == PICK_IMAGE && resultCode == RESULT_OK) {
+            if(data != null){
+                imageUrl = data.getData();
+                Log.d("imageUrl","imageUrl : "+imageUrl);
+                try {
+                    Bitmap bitmap = MediaStore.Images.Media.getBitmap((getActivity()).getContentResolver(),imageUrl);
+
+                    changeimage.setImageBitmap(bitmap);
+                } catch (IOException e){
+                    e.printStackTrace();
+                }
             }
+
         }
     }
-
 
 }

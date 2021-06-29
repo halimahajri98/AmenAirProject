@@ -17,6 +17,8 @@ import android.view.ViewGroup;
 import android.widget.LinearLayout;
 
 import com.example.parpproject.Bluetooth;
+import com.example.parpproject.BluetoothConnection;
+import com.example.parpproject.Pression;
 import com.example.parpproject.R;
 import com.example.parpproject.connectionBluetooth;
 import com.example.parpproject.consBatterie;
@@ -26,9 +28,9 @@ import com.google.android.material.navigation.NavigationView;
 
 public class HomeFragment extends Fragment {
    Activity context ;
-    CardView mycard, mycard1 , batteriecard , cardventilo;
+    CardView mycard, mycard1 , batteriecard , carHal, cardventilo;
     LinearLayout ll;
-    Intent i , intent , intent3 , intent4;
+    Intent i , intent , intent3 , intent4 , intent7;
 
 
 
@@ -77,6 +79,16 @@ public class HomeFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 startActivity(intent4);
+            }
+        });
+
+
+        carHal = (CardView) context.findViewById(R.id.carHal);
+        intent7 = new Intent(context, BluetoothConnection.class);
+        carHal.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(intent7);
             }
         });
 

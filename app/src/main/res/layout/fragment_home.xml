@@ -110,6 +110,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <androidx.cardview.widget.CardView
+            android:id="@+id/carHal"
             android:foreground="?android:attr/selectableItemBackground"
             android:clickable="true"
             android:layout_width="140dp"
@@ -142,7 +143,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:text="Check that users have been added in the app"
+                    android:text="Check that data receive"
                     android:padding="5dp"
                     android:textColor="@android:color/darker_gray"/>
 

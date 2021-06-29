@@ -28,7 +28,7 @@
 
                 <RelativeLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="200dp"
                     android:padding="@dimen/margin_extra_medium_large">
 
                     <RelativeLayout
@@ -39,6 +39,7 @@
                         android:layout_centerHorizontal="true">
 
                         <RelativeLayout
+
                             android:id="@+id/avatar_container"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -49,16 +50,16 @@
                             <ImageView
 
                                 android:id="@+id/me_avatar"
-                                android:layout_width="@dimen/avatar_sz_inner_circle"
-                                android:layout_height="@dimen/avatar_sz_inner_circle"
+                                android:layout_width="90dp"
+                                android:layout_height="90dp"
                                 android:contentDescription="@string/reader_avatar_desc"/>
                         </RelativeLayout>
 
                         <ProgressBar
                             android:id="@+id/avatar_progress"
                             style="@android:style/Widget.Holo.ProgressBar"
-                            android:layout_width="@dimen/avatar_sz_inner_circle"
-                            android:layout_height="@dimen/avatar_sz_inner_circle"
+                            android:layout_width="90dp"
+                            android:layout_height="90dp"
                             android:layout_gravity="center"
                             android:background="@drawable/bg_oval_black"
                             android:clickable="true"
@@ -172,7 +173,7 @@
                 android:layout_height="wrap_content"
                 android:text="CHANGE"
                 android:textColor="#78B6E6"
-                android:layout_marginBottom="20dp"/>
+                android:layout_marginBottom="0dp"/>
 
 
 
